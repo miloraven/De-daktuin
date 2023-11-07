@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.hamitems{display: flex;}
+
+.hamitems a{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+    text-align: end;
+}
+
+.hamitems a:hover{background: lightgrey;}
+
+.hamnav label, #hamburger{display: none;}
+
+@media screen and (max-width: 768px){
+
+.hamitems a{
+    box-sizing: border-box;
+    display: block;
+    border-top: 0.05em solid lightgray;
+}
+
+.hamnav label{
+    display: flex;
+    justify-content: end;
+    color: black;
+    font-style: normal;
+    font-size: 3em;
+    padding-right: 3%;
+}
+
+.hamitems{display: none;}
+
+.hamnav input:checked ~ .hamitems{display: block;}
+}
+
+.footernav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footernav a:hover{
+    color: lightgray;
+}
+
+.footernav a, .hamnav a{
+    color: black;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.homepagegroen img{
+    width: 20%;
+}
+
+main .homepagegroen{
+    background-color: #A0C380;
+}
+
+.homepagegroen{
+    border: solid white;
+    margin: 2em;
+    border-width: 0.1em;
+}
+
+.vakgroenblauw{
+    display: flex;
+    justify-content: center;
+}
+
+.vakblauw{
+    background-color: #799FB6;
+}
+
+.vakblauw img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 1.5em;
+}
+
+.vakgroen img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 1.5em;
+}
+
+.vakgroen{
+    background-color: #A0C380;
+}
+
+.uitlegblauw{
+    background-color: #799FB6;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.uitlegblauw img{
+    width: 90%;
+}
+
+details{
+    padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    padding-top: 1em;
+    width: 90%;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+    gap: 5em;
+    background-color: #A0C380;
+}
+
+.column img{
+    width: 4.3em;
+    height: 7.5em;
+    padding-left: 35%;
+}
+
+@media (max-width: 1300px) {
+    .column {
+      flex-direction: column;
+    }
+}
+
+.witteteksticons{
+    color: white;
+}
+
+.teksticons{
+    color: #3F601B;
+}
+
+.fotosgroen{
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: #A0C380;
+}
+
+.fotosgroen img{
+    width: 20%;
+}
+
+.fotoblauw{
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: #799FB6;
+}
+
+.fotoblauw img{
+    width: 90%;
+}
+
+.contactpagina{
+    background-color: #799FB6;
+    padding-bottom: 1em;
+}
+
+iframe{
+    width: 100%;
+    height: 25em;
+    border-style: none;
+}
+
+.groenekleinekop{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 150%;
+    color: #3F601B;
+}
+
+.blauwekleinekop{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 150%;
+    color: #78CDE1;
+}
+
+.groenegrotekop{
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 200%;
+    color: #3F601B;
+}
+
+.blauwegrotekop{
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 200%;
+    color: #78CDE1;
+}
+
+.wittetekst{
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+}
+
+.zwartetekst{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.partnerbox{
+    display: flex;
+    column-gap: 1px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media (max-width: 1300px) {
+    .partnerbox {
+      flex-direction: column;
+    }
+}
+
+.wittetekstpartnerbox{
+    color: white;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 0.5em;
+    padding: 0.75em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.berichtvak{
+    height: 10em;
+    border: none;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+input{
+    border: none;
+}
+
+.contactpaginablauw{
+    border: solid white;
+    border-width: 0.1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1em;
+}
+
+.buttonblauwzwart{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 1em;
+    box-shadow: 7.5px -7.5px 0px 0px darkgray;
+    text-decoration:none;
+    font-weight:bold;
+    cursor :pointer;
+    background-color: #78CDE1;
+    color: white;
+    border: solid black;
+    border-width: 0.05em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.buttonblauwwit{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    margin-left: 24%;
+    margin-right: 24%;
+    margin-bottom: 1em;
+    box-shadow: 7.5px -7.5px 0px 0px white;
+    text-decoration:none;
+    font-weight:bold;
+    cursor :pointer;
+    background-color: #78CDE1;
+    color: white;
+    border: solid black;
+    border-width: 0.05em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.buttongroenwit{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1em;
+    box-shadow: 7.5px -7.5px 0px 0px white;
+    text-decoration:none;
+    font-weight:bold;
+    cursor :pointer;
+    background-color:#3F601B;
+    color: white;
+    border: solid black;
+    border-width: 0.05em;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.buttonblauwverstuur{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid black;
+    border-width: 0.05em;
+    box-shadow: 7.5px -7.5px 0px 0px white;
+    text-decoration:none;
+    font-weight:bold;
+    cursor :pointer;
+    background-color: #78CDE1;
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+}
